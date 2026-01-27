@@ -428,8 +428,10 @@ body{
 /************************************/
 
 header.main-header{
-	position: relative;
-	z-index: 100;
+	position: sticky;
+	z-index: 9999;
+	width: 100%;
+	top: 0;
 }
 
 header.main-header .header-sticky{
@@ -2331,6 +2333,9 @@ header.main-header .header-sticky.active .navbar{
 .vision-mission-item:hover .icon-box img{
 	filter: brightness(0) invert(1);
 }
+.vision-mission-content{
+	text-align: justify;
+}
 
 .vision-mission-content h3{
 	font-size: 20px;
@@ -3626,7 +3631,7 @@ header.main-header .header-sticky.active .navbar{
 @media only screen and (max-width: 991px){
 
 	.navbar{
-		padding: 20px 0;
+		padding: 17px 0;
 	}
 	
 	.slicknav_nav li,
@@ -4418,7 +4423,19 @@ header.main-header .header-sticky.active .navbar{
 		font-size: 18px;
 		margin-bottom: 5px;
 	}
-
+	.blogSwiper{
+		padding: 40px 20px !important;
+	}
+	.swiper-button-next , .swiper-button-prev{
+		display: none !important;
+	}
+	.custom-center{
+		justify-content: start !important;
+	}
+.layoutCustom{
+	margin-left: 0 !important;
+	min-width: 100%;
+}
 	.why-choose-img-2 img{
 		aspect-ratio: 1 / 1.02;
 	}
@@ -4463,6 +4480,10 @@ header.main-header .header-sticky.active .navbar{
 	.how-work-company-slider{
 		margin-top: 30px;
 		padding-top: 30px;
+		padding-left: 14px !important;
+	}
+	.customisedRow{
+		flex-direction: column-reverse;
 	}
 
 	.our-skill-image{
@@ -4803,4 +4824,24 @@ header.main-header .header-sticky.active .navbar{
 	text-align: start !important;
 	margin-left: 120px !important;
 } */
+ #msgSubmit{
+	white-space: pre-line;
+ }
+ .main-header.scrolled {
+	/* background-color: #a86852; */
+	/* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
+	background: rgba(30, 30, 30, 0.75);
+	backdrop-filter: blur(8px);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  /* .btnBook.onScrollBtn{
+	background-color: #fff;
+	color: #a86852;
+  }
+  .onScrollBtn:hover{
+	background-color: #fff;
+	color: #a86852;
+  } */
+
+  
 /* //custome class style end */

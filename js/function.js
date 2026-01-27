@@ -366,3 +366,18 @@
 	}
 	
 })(jQuery);
+
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".main-header");
+	const headerBlack = document.querySelector(".btnBook");
+
+
+    if (window.scrollY > 100) {
+      header.classList.add("scrolled");
+	  headerBlack.classList.add('onScrollBtn');
+    } else {
+      header.classList.remove("scrolled");
+	  headerBlack.classList.remove('onScrollBtn');
+
+    }
+  });
