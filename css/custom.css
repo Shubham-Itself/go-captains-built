@@ -287,10 +287,15 @@ body{
 
 .loading-container,
 .loading{
-	height: 100px;
+	height: 130px;
 	position: relative;
-	width: 100px;
+	width: 130px;
 	border-radius: 100%;
+}
+.loading-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .loading-container{
@@ -313,9 +318,10 @@ body{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	min-width: 90px;
 	transform: translate(-50%, -50%);
 }
+
 
 @keyframes rotate-loading{
 	0%{
@@ -4834,6 +4840,9 @@ header.main-header .header-sticky.active .navbar{
 	backdrop-filter: blur(8px);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   }
+  /* .imgLoader{
+	min-width: 90px;
+  } */
   /* .btnBook.onScrollBtn{
 	background-color: #fff;
 	color: #a86852;
